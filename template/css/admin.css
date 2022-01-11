@@ -1,0 +1,120 @@
+html.dark {
+  --color-bg1: #161924;
+  --color-title: #c4c4c4;
+  --color-bg2: #1d202b;
+  --color-text: #a9a9a9;
+  --color-hover1: #66fcf1;
+  --color-hover2: #45a29e;
+  --color-red: red;
+  --color-orange: orange;
+  --color-green: green;
+  --color-white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-title);
+}
+body {
+  background: var(--color-bg1);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+input {
+  padding: 6px 12px;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  line-height: 1.5rem;
+  color: #444;
+}
+input:focus {
+  border: 1px solid grey;
+}
+.error {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: red;
+}
+
+
+/* posts*/
+.row-admin{
+  width: 100%;
+}
+
+.posts{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.row-admin p{
+  color: var(--color-title);
+}
+.posts input,.posts select, option{
+  color: var(--color-text);
+  background: var(--color-bg2);
+  width: 100%;
+  border-bottom: 0px solid var(--color-hover1);
+  border: none;
+  outline: none;
+}
+.posts select{
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.posts input:focus{
+  border-bottom: 2px solid var(--color-hover1);
+}
+.buttons a{
+  border-bottom: 2px solid var(--color-hover1);
+  margin-left: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.posts form{
+  margin: 20px 10px;
+}
+.posts textarea{
+  color: var(--color-text);
+  padding: 10px 10px;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  background: var(--color-bg2);
+  border: none;
+  outline: none;
+}
+.create-btn{
+  cursor: pointer;
+  margin-top: 20px;
+  border: 2px solid var(--color-bg1);
+  transition: .4s;
+
+}
+.create-btn:hover{
+  background: var(--color-bg1);
+  border: 2px solid var(--color-bg2);
+
+}
+
+/* /posts*/
